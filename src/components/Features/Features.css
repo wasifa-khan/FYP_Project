@@ -1,0 +1,46 @@
+.caption {
+  color: #004A98;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 40px; /* Increased gap between features */
+}
+
+.feature {
+  width: 300px; /* Fixed feature width */
+  height: 400px; /* Fixed feature height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #e0e0e0; /* Added border for better separation */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Increased padding */
+}
+
+.feature-image {
+  max-width: 250px;
+  align-self: center;
+}
+.feature button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.feature button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,334 @@
+/* Global Styles */
+
+
+/* Resume Body */
+.resume-body {
+  margin: 70px;
+}
+
+/* Resume Container */
+.resume-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container h1, 
+.resume-container h2, 
+.resume-container h3 {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-container h1 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.resume-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.resume-container ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.resume-container ul li {
+  margin-bottom: 10px;
+}
+
+.resume-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.resume-container a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px; /* Add margin around buttons */
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed;
+}
+
+/* Resume Checker Header */
+.resume-checker-header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Resume Checker Container */
+.resume-checker-container,
+.resume-checker-step {
+  margin-top: 70px;
+  border: 4px dashed #2d2b2b;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Checker Form Group */
+.resume-checker-form-group {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-checker-form-group input,
+.resume-checker-form-group select,
+.resume-checker-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.resume-checker-form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* File Upload Styles */
+.upload-file-container {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-file-button {
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px; /* Add margin around buttons */
+}
+
+.upload-file-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.upload-file-button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed;
+}
+
+.upload-file-filename {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #666;
+}
+
+.upload-file-error {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.upload-file-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.upload-file-progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #3e8e41;
+  transition: width 0.3s;
+}
+
+.upload-file-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #fff;
+}
+
+.upload-file-success {
+  color: green;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.upload-file-success-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Additional Styles */
+.resume-checker-textarea,
+.resume-checker-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.resume-checker-textarea {
+  height: 100px;
+}
+
+.resume-checker-select {
+  height: 40px;
+}
+
+.resume-checker-button {
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px; /* Add margin around buttons */
+}
+
+.resume-checker-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.resume-checker-button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  cursor: not-allowed;
+}
+
+
+
+.resume-checker-response {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #eef2f5; /* Light background */
+
+  
+  color: black; /* Darker text for better readability */
+  text-decoration: none;
+}
+
+/* Improve readability of pre-formatted text */
+.resume-checker-response pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+  font-size: 14px; /* Slightly larger font size */
+  line-height: 1.5; /* Better line spacing */
+  color: #2c3e50; /* Darker text color */
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 15px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Subtle border */
+  overflow: auto; /* Handle overflow */
+}
+
+/* Section headings */
+.resume-checker-response h4 {
+  font-size: 18px; /* Larger font size for headings */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px; /* Space below heading */
+  color: #2980b9; /* Blue color for headings */
+}
+
+/* Key-value pairs */
+.resume-checker-response .key-value {
+  display: flex; /* Use flexbox for alignment */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.resume-checker-response .key-value .key {
+  font-weight: bold; /* Bold text for keys */
+  width: 30%; /* Fixed width for keys */
+  color: #555; /* Slightly lighter text color */
+}
+
+.resume-checker-response .key-value .value {
+  width: 70%; /* Flexible width for values */
+  color: #333; /* Darker text color for values */
+}
+
+/* Highlight important information */
+.resume-checker-response .highlight {
+  background-color: #dff0d8; /* Light green background */
+  color: #3c763d; /* Dark green text */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #d6e9c6; /* Subtle border */
+}
+
+/* Improve links */
+.resume-checker-response a {
+  color: #3498db; /* Blue text color */
+  text-decoration: underline; /* Underline links */
+}
+
+.resume-checker-response a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Example usage of the above styles */
+.resume-checker-response .example {
+  font-style: italic; /* Italic text */
+  color: #999; /* Light gray text */
+  margin-top: 10px; /* Space above example */
+}
+
+/* Additional space and layout improvements */
+.resume-checker-response p {
+  margin-bottom: 15px; /* Space below paragraphs */
+}

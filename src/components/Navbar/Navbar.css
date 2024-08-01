@@ -1,0 +1,176 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 80px;
+  width: 100%;
+  /* padding: 0 2rem; */
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 2rem;
+  color: #004A98;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Added line below navbar (optional) */
+.navbar + .content {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+/* Hover effects for links */
+.nav-links li:hover {
+  border-bottom: 3px solid #004A98;
+}
+
+/* Navbar buttons styling (assuming Bootstrap classes) */
+.nav-buttons {
+  margin-right: 1rem;
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #004A98;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+ul > .nav-buttons {
+  color: #fff;
+}
+
+.nav-buttons:hover {
+  background-color: #5a6268;
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Styles for tablet and below */
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+  
+  
+  .mobile-menu-icon {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .navbar-buttons {
+    display: none;
+  }
+  
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+    left: 0;
+    right: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    
+    background-color: #004A98;
+  }
+  
+  .nav-links-mobile a {
+    text-decoration: none;
+  }
+  
+  .nav-buttons {
+    padding: 10px;
+    width: 20%;
+    margin: 12px;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin-left: 40%;
+    background-color: #2571c2;
+   
+    
+  }
+ 
+  
+  ul li {
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+    font-size: 12px;
+    color: #004A98;
+  }
+}
+
+/* Additional media query for smaller devices */
+@media (max-width: 480px) {
+  .nav-links li {
+    margin-right: 1rem; /* Adjusted margin for smaller screens */
+  }
+}

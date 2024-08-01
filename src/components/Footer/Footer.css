@@ -1,0 +1,118 @@
+.container {
+  width: 100%; 
+}
+
+.Footer-sec {
+  background-color: #004A98;
+  color: #fff;
+  padding-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Footer-logo {
+  height: 150px;
+  width: 170px;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon-svg {
+  width: 60%;
+  height: 60%;
+  fill: #004A98;
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: #007bff;
+}
+
+.instagram:hover .icon-svg,
+.linkedin:hover .icon-svg,
+.facebook:hover .icon-svg,
+.github:hover .icon-svg {
+  fill: #fff; /* Change fill color on hover */
+}
+
+.instagram:hover,
+.linkedin:hover,
+.facebook:hover,
+.github:hover {
+  background-color: #b73ab9; /* Change background color on hover */
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 576px) {
+  .Footer-logo {
+    height: 120px;
+    width: 130px;
+    padding: 10px; /* Add padding */
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .Footer-sec {
+    padding: 40px; /* Add padding to content */
+    
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .Footer-logo {
+    height: 130px;
+    width: 140px;
+  }
+  .icon {
+    margin-right: 10px; /* Decrease margin for small screens */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .Footer-logo {
+    height: 140px;
+    width: 150px;
+  }
+  
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .Footer-logo {
+    height: 145px;
+    width: 160px;
+  }
+  .icon {
+    margin-right: 10px; /* Decrease margin for small screens */
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .Footer-logo {
+    height: 150px;
+    width: 170px;
+  }
+  
+}
+@media only screen and (max-width: 576px) {
+  .icon {
+    margin-right: 2px; /* Decrease margin for small screens */
+  }
+  .icon a {
+    font-size: 12px;
+  }
+}

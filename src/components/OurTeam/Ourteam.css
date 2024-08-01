@@ -1,0 +1,106 @@
+/* Add styles for social media icons */
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* LinkedIn icon */
+.social-icons a:nth-child(1) {
+  margin-right: 10px;
+  color: #00679f; /* LinkedIn color */
+  font-size: 20px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icons a:nth-child(1):hover {
+  color: #0756a5; /* LinkedIn hover color */
+}
+
+/* GitHub icon */
+.social-icons a:nth-child(2) {
+  margin-right: 10px;
+  color: #333; /* GitHub color */
+  font-size: 20px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icons a:nth-child(2):hover {
+  color: #454545; /* GitHub hover color */
+}
+
+/* Instagram icon */
+.social-icons a:nth-child(3) {
+  margin-right: 10px;
+  color: #bc2a8d; /* Instagram color */
+  font-size: 20px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icons a:nth-child(3):hover {
+  color: #9e236b; /* Instagram hover color */
+}
+
+/* Facebook icon */
+.social-icons a:nth-child(4) {
+  margin-right: 10px;
+  color: #3b5998; /* Facebook color */
+  font-size: 20px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icons a:nth-child(4):hover {
+  color: #0e3a90; /* Facebook hover color */
+}
+
+/* Your existing custom text color */
+.text-custom-color {
+  color: #004A98;
+}
+
+/* Your existing text description color */
+.text-description {
+  color: #000000; /* Black */
+  text-align: justify; /* Always left-align the description */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .max-w-2xl {
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center; /* Center the text inside the element */
+  }
+
+  .max-w-2xl h2,
+  .max-w-2xl p {
+    text-align: center; /* Center the text inside the h2 and p elements */
+  }
+}
+
+
+/* Add more media queries and adjust styles as needed */
